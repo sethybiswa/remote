@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Registration Form ....</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body{
+        background-color:burlywood;
+    }
+</style>
+<body>
+
+
+<div class="container">
+    <div class="row1">
+        <div class="off-set-md4 col-md4">
+            <form method="post">
+                {% csrf_token %}
+                <h3 align="center">Please Enter Your Details</h3>
+                {{ form.as_p }}<br>
+                <center>
+                    <input type="submit" value="Signup" class="btn btn-success">
+                    <input type="reset" value="Clear" class="btn btn-danger">
+                </center>
+            </form>
+            <center>
+             <a style="color: green" href="/#/">Home Page</a>
+            </center>
+</div>
+</body>
+</html>
